@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+</head>
+
+<body>
+   
+    <a href="ctrdao.html">返回</a>
+    <p>
+        <button onclick="crtdao()">创建DAO</button>
+        <button>进入主页</button>
+        <button>链接钱包</button>
+    </p>
+    <div id="ctr" style="display:none ;">
+        <form id="example-advanced-form" action="#" style="">
+            <h3>Account</h3>
+            <fieldset class="form-input">
+                <h4>Account Information</h4>
+
+                <label for="userName">User name *</label>
+                <input id="userName" name="userName" type="text" class="">
+                <label for="password">Password *</label>
+                <input id="password" name="password" type="text" class="">
+                <label for="confirm">Confirm Password *</label>
+                <input id="confirm" name="confirm" type="text" class="">
+                <p>(*) Mandatory</p>
+            </fieldset>
+            <fieldset class="form-input">
+                <h4>DAO Project Information</h4>
+
+                <label for="name">Project name *</label>
+                <input id="name" name="name" type="text" class="">
+
+                <label for="email">Email *</label>
+                <input id="email" name="email" type="text" class="">
+                <label for="address">Address</label>
+                <input id="address" name="address" type="text" onclick="warm1()">
+                <label for="age">Age *</label>
+                <input id="age" name="age" type="text" onclick="warm2()">
+                <br>            
+                <label for="surname">Project introduce *</label>
+                <textarea rows="6" cols="90">项目介绍</textarea>
+                <script>
+                    function warm1(){
+                        window.alert("位于中国地区") 
+                    }
+                    function warm2(){
+                        window.alert("The warning step will show up if age is less than 18") 
+                    }      
+                </script>
+                <p>(*) Mandatory</p>
+            </fieldset>
+            <fieldset class="">
+                <h4>Terms and Conditions</h4>
+                <input id="acceptTerms-2" name="acceptTerms" type="checkbox" > <label for="acceptTerms-2">I agree with the Terms and Conditions.</label>
+            </fieldset>
+            <fieldset class="">
+                <h4>Finish</h4>
+                <input id="finishLoginUp" name="finish" type="submit" >
+            </fieldset>
+        </form>
+    </div>
+    <script>
+        function crtdao() {
+            document.getElementById("ctr").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
